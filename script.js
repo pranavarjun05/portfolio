@@ -6,7 +6,7 @@ let scrollBtn = document.querySelector(".scroll-button a");
 let val;
 
 window.onscroll = function() {
-  if(document.documentElement.scrollTop > 20){
+  if(window.pageYOffset > 20){
     nav.classList.add("sticky");
     scrollBtn.style.display = "block";
   }else{
